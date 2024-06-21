@@ -56,7 +56,7 @@ python wordle.py
 3. You have 6 attempts to guess the correct word.
 
 ### Example Gameplay
-<img title="GUESS" alt="GUESS" src="/images/guess.PNG">
+<img title="GUESS" alt="GUESS" src="/images/Guess.PNG">
 <img title="GAME OVER" alt="GAME OVER" src="/images/Answer.PNG">
 
 
