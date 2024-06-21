@@ -37,9 +37,9 @@ def game_over(user_guesses, solution, answered_correctly):
     show_guesses(user_guesses, solution)
 
     if answered_correctly:
-        console.print(f"\n[bold white on green]Correct, the word is {solution}[/]")
+        console.print(f"\n[bold white on green]Correct, the word is {solution}[/]", justify="center")
     else:
-        console.print(f"\n[bold white on red]Sorry, the word was {solution}[/]")
+        console.print(f"\n[bold white on red]Sorry, the word was {solution}[/]", justify="center")
 
 def get_solution() -> str:
     """Generate a pseudo-random solution for the game"""
@@ -51,7 +51,7 @@ def get_solution() -> str:
 def ask_user_guess(previous_guesses) -> str:
     user_guess = ""
     while not check_guess_validity(user_guess) and user_guess not in previous_guesses:
-        user_guess = console.input("Enter guess: ")
+        user_guess = console.input("\nEnter guess: ")
         user_guess = user_guess.upper()
         if user_guess in previous_guesses:
             console.print(f"You have already guessed: {user_guess}")
